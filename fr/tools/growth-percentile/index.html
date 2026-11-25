@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculateur de percentiles de croissance de bébé (OMS, 0–24 mois) | BabySteps</title>
+<meta name="description" content="Calculateur gratuit des percentiles de poids, de longueur et de périmètre crânien selon les normes de croissance de l&#x27;enfant de l&#x27;OMS, de la naissance à 24 mois. Confidentiel : tout se fait dans votre navigateur.">
+<link rel="canonical" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/growth-percentile/">
+<link rel="alternate" hreflang="en" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/growth-percentile/">
+<link rel="alternate" hreflang="ar" href="https://soloqdev.github.io/BabySteps-Log-Track/ar/tools/growth-percentile/">
+<link rel="alternate" hreflang="es" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/growth-percentile/">
+<link rel="alternate" hreflang="fr" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/growth-percentile/">
+<link rel="alternate" hreflang="de" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/growth-percentile/">
+<link rel="alternate" hreflang="x-default" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/growth-percentile/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculateur de percentiles de croissance de bébé (OMS, 0–24 mois) | BabySteps">
+<meta property="og:description" content="Calculateur gratuit des percentiles de poids, de longueur et de périmètre crânien selon les normes de croissance de l&#x27;enfant de l&#x27;OMS, de la naissance à 24 mois. Confidentiel : tout se fait dans votre navigateur.">
+<meta property="og:url" content="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/growth-percentile/">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#F9F5FF">
+<link rel="stylesheet" href="../../../assets/tools.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Calculateur de percentiles de croissance de bébé",
+ "description": "Calculateur gratuit des percentiles de poids, de longueur et de périmètre crânien selon les normes de croissance de l'enfant de l'OMS, de la naissance à 24 mois. Confidentiel : tout se fait dans votre navigateur.",
+ "url": "https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/growth-percentile/",
+ "inLanguage": "fr",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BabySteps: Log & Track",
+  "url": "https://soloqdev.github.io/BabySteps-Log-Track/"
+ },
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "WHO Child Growth Standards",
+  "url": "https://www.who.int/tools/child-growth-standards",
+  "publisher": {
+   "@type": "Organization",
+   "name": "World Health Organization"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="../../../index.html" aria-label="Accueil BabySteps" lang="en" dir="ltr"><span class="brand-mark"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/><circle cx="24" cy="26" r="3" fill="#7C4DBA"/><circle cx="36" cy="26" r="3" fill="#7C4DBA"/><path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/></svg></span><span>Baby<span>Steps</span></span></a>
+<nav class="langs" aria-label="Langue">
+<ul>
+<li><a href="../../../tools/growth-percentile/" hreflang="en" lang="en">English</a></li>
+<li><a href="../../../ar/tools/growth-percentile/" hreflang="ar" lang="ar">العربية</a></li>
+<li><a href="../../../es/tools/growth-percentile/" hreflang="es" lang="es">Español</a></li>
+<li><a href="../../../fr/tools/growth-percentile/" hreflang="fr" lang="fr" aria-current="page">Français</a></li>
+<li><a href="../../../de/tools/growth-percentile/" hreflang="de" lang="de">Deutsch</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<h1>Calculateur de percentiles de croissance de bébé</h1>
+<p class="lede">Voyez à peu près où se situent le poids, la longueur et le périmètre crânien de votre bébé sur les normes de croissance de l&#x27;enfant de l&#x27;OMS, de la naissance à 24 mois.</p>
+<form id="growth-form" class="card" data-json="../../../data/who-growth.json" novalidate>
+<fieldset>
+<legend>Sexe <span class="hint">L&#x27;OMS publie des courbes distinctes pour les garçons et les filles.</span></legend>
+<div class="segmented">
+<label><input type="radio" name="sex" value="male"><span>Garçon</span></label>
+<label><input type="radio" name="sex" value="female"><span>Fille</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Âge</legend>
+<div class="segmented">
+<label><input type="radio" name="agemode" value="dob" checked><span>Date de naissance</span></label>
+<label><input type="radio" name="agemode" value="age"><span>Âge en mois et jours</span></label>
+</div>
+<div id="age-dates" class="row two">
+<div class="field">
+<label for="dob">Date de naissance</label>
+<div class="input-wrap"><input type="date" id="dob" name="dob"></div>
+</div>
+<div class="field">
+<label for="measured">Date de la mesure</label>
+<div class="input-wrap"><input type="date" id="measured" name="measured"></div>
+</div>
+</div>
+<div id="age-numbers" class="row two" hidden>
+<div class="field">
+<label for="age-months">Mois</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-months" name="age-months"></div>
+</div>
+<div class="field">
+<label for="age-days">Jours</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-days" name="age-days"></div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>Unités</legend>
+<div class="segmented">
+<label><input type="radio" name="units" value="metric" checked><span>Métrique (kg, cm)</span></label>
+<label><input type="radio" name="units" value="imperial"><span>Impérial (lb, oz, po)</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Mesures <span class="hint">Remplissez un champ, plusieurs ou tous.</span></legend>
+<div class="field">
+<label for="m-weight">Poids</label>
+
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-weight" name="m-weight"><span class="unit" data-metric="kg" data-imperial="lb">kg</span></div>
+<div class="input-wrap imperial-only" hidden><label class="visually-hidden" for="m-weight-oz">Onces</label><input type="text" inputmode="decimal" autocomplete="off" id="m-weight-oz" name="m-weight-oz"><span class="unit" aria-hidden="true">oz</span></div></div>
+</div>
+<div class="field">
+<label for="m-length">Longueur</label>
+<span class="hint" id="length-hint">Mesurée en position allongée.</span>
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-length" name="m-length" aria-describedby="length-hint"><span class="unit" data-metric="cm" data-imperial="po">cm</span></div>
+</div>
+</div>
+<div class="field">
+<label for="m-head">Périmètre crânien</label>
+
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-head" name="m-head"><span class="unit" data-metric="cm" data-imperial="po">cm</span></div>
+</div>
+</div>
+</fieldset>
+<button type="submit" class="button">Afficher les percentiles</button>
+</form>
+<noscript><p class="errors" style="margin-top:16px">Cet outil a besoin de JavaScript pour afficher les résultats.</p></noscript>
+<div id="errors" class="errors" tabindex="-1" hidden style="margin-top:16px"></div>
+<section id="results" aria-labelledby="results-heading" hidden>
+<h2 id="results-heading" tabindex="-1">Résultats</h2>
+<p id="result-age" class="muted" style="margin-bottom:16px"></p>
+<div id="result-list" class="results"></div>
+</section>
+<section>
+<h2>Comment c&#x27;est calculé</h2>
+<p>Les normes de croissance de l&#x27;enfant de l&#x27;OMS fournissent des courbes de référence pour les 3e, 15e, 50e, 85e et 97e percentiles à chaque mois, de la naissance à 24 mois. Ce calculateur situe ces courbes à l&#x27;âge exact de votre bébé, puis estime où se place la mesure entre elles.</p>
+<p>Comme il s&#x27;appuie sur cinq courbes et non sur les tables complètes de l&#x27;OMS, le résultat est une estimation. Il est affiché avec « environ », arrondi à un percentile entier, et il n&#x27;est pas donné en dehors de la plage du 3e au 97e percentile.</p>
+</section>
+<section>
+<h2>Ce que signifie un percentile</h2>
+<p>Un percentile compare une mesure à un grand groupe de bébés en bonne santé du même âge et du même sexe. Environ le 30e percentile signifie qu&#x27;environ 30 bébés sur 100 avaient une mesure plus basse et environ 70 une mesure plus haute. C&#x27;est une comparaison, pas une note : les bébés de toutes les tailles grandissent bien.</p>
+<p>Une seule mesure en dit moins que l&#x27;évolution sur plusieurs visites. Votre professionnel de santé regarde cette évolution, la façon dont votre bébé s&#x27;alimente et son état général.</p>
+</section>
+<p class="muted" style="margin-top:24px">Source : <a href="https://www.who.int/tools/child-growth-standards" rel="noopener">Organisation mondiale de la Santé, normes de croissance de l&#x27;enfant de l&#x27;OMS (poids pour l&#x27;âge, longueur pour l&#x27;âge et périmètre crânien pour l&#x27;âge), 2006.</a></p>
+<aside class="note" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">Information générale, pas un avis médical</h2>
+<p>Cette page donne des informations générales et ne remplace pas un avis médical. Si vous avez des questions sur la croissance, l&#x27;alimentation ou le sommeil de votre bébé, parlez-en à votre médecin, à votre sage-femme ou à un autre professionnel de santé.</p>
+<p>Tout est calculé dans votre navigateur. Pas d&#x27;inscription, pas de cookies, pas de suivi : rien de ce que vous saisissez ne quitte cette page.</p>
+</aside>
+<p class="muted" style="margin-top:24px">Autre outil gratuit : <a href="../../../fr/tools/wake-windows/">Fenêtres d&#x27;éveil selon l&#x27;âge</a></p>
+<aside class="cta" aria-labelledby="cta-title">
+<h2 id="cta-title">Suivez la croissance au fil du temps</h2>
+<p>BabySteps rassemble les mesures, repas, sommeils et couches de votre bébé au même endroit, avec des courbes de croissance basées sur les mêmes données de l&#x27;OMS.</p>
+<a class="button" href="https://apps.apple.com/app/id6761369475?ct=webtools-growth&amp;mt=8">Télécharger BabySteps sur l&#x27;App Store</a>
+</aside>
+</main>
+<footer class="site-footer">
+<nav aria-label="BabySteps">
+<a href="../../../index.html">Accueil</a>
+<a href="../../../privacy-policy.html" hreflang="en">Politique de confidentialité</a>
+<a href="../../../terms-of-service.html" hreflang="en">Conditions d&#x27;utilisation</a>
+<a href="../../../support.html" hreflang="en">Assistance</a>
+</nav>
+<p lang="en" dir="ltr">&copy; 2026 BabySteps: Log &amp; Track</p>
+</footer>
+</div>
+<script type="application/json" id="tool-strings">
+{
+ "pAbout": "Environ au {p} percentile",
+ "explain": "Sur la courbe de l'OMS, environ {n} bébés sur 100 du même âge et du même sexe ont une mesure plus basse.",
+ "below": "Sous la courbe du {p} percentile, qui correspond à {v} à cet âge.",
+ "above": "Au-dessus de la courbe du {p} percentile, qui correspond à {v} à cet âge.",
+ "outsideNote": "Ce calculateur ne fait pas d'estimation au-delà de ces courbes. Un professionnel de santé peut replacer la mesure dans son contexte.",
+ "range": "Plage habituelle à cet âge (du 3e au 97e percentile) : de {lo} à {hi}. Valeur médiane (50e percentile) : {mid}.",
+ "age": "Âge à la mesure : {age}",
+ "errSex": "Choisissez garçon ou fille.",
+ "errDob": "Saisissez la date de naissance et la date de la mesure.",
+ "errOrder": "La date de la mesure est antérieure à la date de naissance.",
+ "errAge": "Saisissez l'âge en mois et en jours entiers.",
+ "errNone": "Saisissez au moins une mesure.",
+ "errNumber": "{field} : saisissez un nombre, par exemple {example}.",
+ "errPlausible": "{field} : {v} semble en dehors de ce que couvre la courbe de l'OMS. Vérifiez le nombre et l'unité.",
+ "outOfRange": "Ce calculateur couvre la période de la naissance à 24 mois. L'âge saisi ({age}) est en dehors de cette période.",
+ "locale": "fr",
+ "ordinal": "e",
+ "loadError": "Les données de cet outil n'ont pas pu être chargées. Rechargez la page.",
+ "units": {
+  "kilogram": "kg",
+  "pound": "lb",
+  "ounce": "oz",
+  "centimeter": "cm",
+  "inch": "po"
+ },
+ "labels": {
+  "weight": "Poids",
+  "length": "Longueur",
+  "head": "Périmètre crânien"
+ }
+}
+</script>
+<script src="../../../assets/growth.js" defer></script>
+</body>
+</html>

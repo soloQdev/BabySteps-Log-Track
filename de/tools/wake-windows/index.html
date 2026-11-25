@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wachfenster beim Baby nach Alter (0–12 Monate) | BabySteps</title>
+<meta name="description" content="Typische Wachfenster für Babys von der Geburt bis 12 Monate, mit schneller Abfrage für das Alter deines Babys. Kostenlos und privat, ohne Anmeldung.">
+<link rel="canonical" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/wake-windows/">
+<link rel="alternate" hreflang="en" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<link rel="alternate" hreflang="ar" href="https://soloqdev.github.io/BabySteps-Log-Track/ar/tools/wake-windows/">
+<link rel="alternate" hreflang="es" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/wake-windows/">
+<link rel="alternate" hreflang="fr" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/wake-windows/">
+<link rel="alternate" hreflang="de" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/wake-windows/">
+<link rel="alternate" hreflang="x-default" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wachfenster beim Baby nach Alter (0–12 Monate) | BabySteps">
+<meta property="og:description" content="Typische Wachfenster für Babys von der Geburt bis 12 Monate, mit schneller Abfrage für das Alter deines Babys. Kostenlos und privat, ohne Anmeldung.">
+<meta property="og:url" content="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/wake-windows/">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#F9F5FF">
+<link rel="stylesheet" href="../../../assets/tools.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Wachfenster nach Alter",
+ "description": "Typische Wachfenster für Babys von der Geburt bis 12 Monate, mit schneller Abfrage für das Alter deines Babys. Kostenlos und privat, ohne Anmeldung.",
+ "url": "https://soloqdev.github.io/BabySteps-Log-Track/de/tools/wake-windows/",
+ "inLanguage": "de",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BabySteps: Log & Track",
+  "url": "https://soloqdev.github.io/BabySteps-Log-Track/"
+ },
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "Wake windows by age",
+  "url": "https://health.clevelandclinic.org/wake-windows-by-age",
+  "publisher": {
+   "@type": "Organization",
+   "name": "Cleveland Clinic"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Hauptinhalt springen</a>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="../../../index.html" aria-label="BabySteps Startseite" lang="en" dir="ltr"><span class="brand-mark"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/><circle cx="24" cy="26" r="3" fill="#7C4DBA"/><circle cx="36" cy="26" r="3" fill="#7C4DBA"/><path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/></svg></span><span>Baby<span>Steps</span></span></a>
+<nav class="langs" aria-label="Sprache">
+<ul>
+<li><a href="../../../tools/wake-windows/" hreflang="en" lang="en">English</a></li>
+<li><a href="../../../ar/tools/wake-windows/" hreflang="ar" lang="ar">العربية</a></li>
+<li><a href="../../../es/tools/wake-windows/" hreflang="es" lang="es">Español</a></li>
+<li><a href="../../../fr/tools/wake-windows/" hreflang="fr" lang="fr">Français</a></li>
+<li><a href="../../../de/tools/wake-windows/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<h1>Wachfenster nach Alter</h1>
+<p class="lede">Ein Wachfenster ist die Zeit, die dein Baby zwischen zwei Schlafphasen wach ist. Gib das Alter deines Babys ein, um den typischen Bereich zu sehen, oder schau in die Tabelle.</p>
+<form id="wake-form" class="card" data-json="../../../data/wake-windows.json" novalidate>
+<fieldset>
+<legend>Alter</legend>
+<div class="segmented">
+<label><input type="radio" name="agemode" value="dob" checked><span>Geburtsdatum</span></label>
+<label><input type="radio" name="agemode" value="age"><span>Alter in Monaten und Tagen</span></label>
+</div>
+<div id="age-dates" class="row">
+<div class="field">
+<label for="dob">Geburtsdatum</label>
+<div class="input-wrap"><input type="date" id="dob" name="dob"></div>
+</div>
+</div>
+<div id="age-numbers" class="row two" hidden>
+<div class="field">
+<label for="age-months">Monate</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-months" name="age-months"></div>
+</div>
+<div class="field">
+<label for="age-days">Tage</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-days" name="age-days"></div>
+</div>
+</div>
+</fieldset>
+<button type="submit" class="button">Typischen Bereich anzeigen</button>
+</form>
+<noscript><p class="errors" style="margin-top:16px">Dieses Tool braucht JavaScript, um Ergebnisse anzuzeigen.</p></noscript>
+<div id="errors" class="errors" tabindex="-1" hidden style="margin-top:16px"></div>
+<div id="result" class="result" hidden style="margin-top:16px">
+<p id="result-main" class="headline" tabindex="-1"></p>
+<p id="result-note" class="muted"></p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Typische Wachfenster von der Geburt bis 12 Monate</caption>
+<thead><tr><th scope="col">Alter</th><th scope="col">Typisches Wachfenster</th></tr></thead>
+<tbody id="wake-rows"><tr><td colspan="2">Wird geladen …</td></tr></tbody>
+</table>
+</div>
+<section>
+<h2>Über diese Bereiche</h2>
+<p>Die Bereiche stammen aus dem Leitfaden der Cleveland Clinic zu Wachfenstern nach Alter und sind dieselben, die die BabySteps-App verwendet. Es sind typische Bereiche, keine Zielwerte.</p>
+<p>Zeichen wie Augenreiben, Gähnen, Wegschauen oder Quengeln zeigen Müdigkeit oft früher als die Uhr. Bei Fragen zum Schlaf deines Babys kann dir eine medizinische Fachkraft weiterhelfen.</p>
+</section>
+<p class="muted" style="margin-top:24px">Quelle: <a href="https://health.clevelandclinic.org/wake-windows-by-age" rel="noopener">Cleveland Clinic, „Wake windows by age“ (englisch).</a></p>
+<aside class="note" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">Allgemeine Information, keine medizinische Beratung</h2>
+<p>Diese Seite bietet allgemeine Informationen und ersetzt keine medizinische Beratung. Wenn du Fragen zum Wachstum, zum Trinken und Essen oder zum Schlaf deines Babys hast, sprich mit deiner Kinderarztpraxis, deiner Hebamme oder einer anderen medizinischen Fachkraft.</p>
+<p>Alles wird in deinem Browser berechnet. Keine Anmeldung, keine Cookies, kein Tracking: Nichts, was du eingibst, verlässt diese Seite.</p>
+</aside>
+<p class="muted" style="margin-top:24px">Ein weiteres kostenloses Tool: <a href="../../../de/tools/growth-percentile/">Perzentilenrechner Wachstum</a></p>
+<aside class="cta" aria-labelledby="cta-title">
+<h2 id="cta-title">Den Rhythmus deines Babys erkennen</h2>
+<p>BabySteps erfasst Schlaf, Mahlzeiten und Windeln in Sekunden, damit der eigene Rhythmus deines Babys mit der Zeit sichtbar wird.</p>
+<a class="button" href="https://apps.apple.com/app/id6761369475?ct=webtools-wake&amp;mt=8">BabySteps im App Store laden</a>
+</aside>
+</main>
+<footer class="site-footer">
+<nav aria-label="BabySteps">
+<a href="../../../index.html">Startseite</a>
+<a href="../../../privacy-policy.html" hreflang="en">Datenschutz</a>
+<a href="../../../terms-of-service.html" hreflang="en">Nutzungsbedingungen</a>
+<a href="../../../support.html" hreflang="en">Support</a>
+</nav>
+<p lang="en" dir="ltr">&copy; 2026 BabySteps: Log &amp; Track</p>
+</footer>
+</div>
+<script type="application/json" id="tool-strings">
+{
+ "result": "Alter: {age}. Typisches Wachfenster: {range}",
+ "durationJoin": " ",
+ "resultNote": "Viele Babys liegen eher am einen Ende des Bereichs, und manche Tage sind anders. Die Müdigkeitszeichen deines Babys sind oft ein besserer Anhaltspunkt als die Uhr.",
+ "toddler": "Die Tabelle deckt die ersten 12 Monate ab. Danach ist die Wachzeit von Kind zu Kind unterschiedlicher, und der eigene Rhythmus deines Kindes ist der beste Anhaltspunkt.",
+ "errDob": "Gib das Geburtsdatum ein.",
+ "errFuture": "Das Geburtsdatum liegt in der Zukunft.",
+ "errAge": "Gib das Alter in ganzen Monaten und Tagen ein.",
+ "youHere": "Alter deines Babys",
+ "range": "{a} bis {b}",
+ "bandLabel": "{a}–{b} {unit}",
+ "monthForms": {
+  "one": "Monat",
+  "other": "Monate"
+ },
+ "locale": "de",
+ "loadError": "Die Daten für dieses Tool konnten nicht geladen werden. Bitte lade die Seite neu."
+}
+</script>
+<script src="../../../assets/wake.js" defer></script>
+</body>
+</html>

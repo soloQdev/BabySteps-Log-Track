@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perzentilenrechner für Babys: Wachstum nach WHO (0–24 Monate) | BabySteps</title>
+<meta name="description" content="Kostenloser Perzentilenrechner für Gewicht, Länge und Kopfumfang deines Babys nach den WHO-Wachstumsstandards, von der Geburt bis 24 Monate. Privat: läuft komplett in deinem Browser.">
+<link rel="canonical" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/growth-percentile/">
+<link rel="alternate" hreflang="en" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/growth-percentile/">
+<link rel="alternate" hreflang="ar" href="https://soloqdev.github.io/BabySteps-Log-Track/ar/tools/growth-percentile/">
+<link rel="alternate" hreflang="es" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/growth-percentile/">
+<link rel="alternate" hreflang="fr" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/growth-percentile/">
+<link rel="alternate" hreflang="de" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/growth-percentile/">
+<link rel="alternate" hreflang="x-default" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/growth-percentile/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Perzentilenrechner für Babys: Wachstum nach WHO (0–24 Monate) | BabySteps">
+<meta property="og:description" content="Kostenloser Perzentilenrechner für Gewicht, Länge und Kopfumfang deines Babys nach den WHO-Wachstumsstandards, von der Geburt bis 24 Monate. Privat: läuft komplett in deinem Browser.">
+<meta property="og:url" content="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/growth-percentile/">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#F9F5FF">
+<link rel="stylesheet" href="../../../assets/tools.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Perzentilenrechner für das Babywachstum",
+ "description": "Kostenloser Perzentilenrechner für Gewicht, Länge und Kopfumfang deines Babys nach den WHO-Wachstumsstandards, von der Geburt bis 24 Monate. Privat: läuft komplett in deinem Browser.",
+ "url": "https://soloqdev.github.io/BabySteps-Log-Track/de/tools/growth-percentile/",
+ "inLanguage": "de",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BabySteps: Log & Track",
+  "url": "https://soloqdev.github.io/BabySteps-Log-Track/"
+ },
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "WHO Child Growth Standards",
+  "url": "https://www.who.int/tools/child-growth-standards",
+  "publisher": {
+   "@type": "Organization",
+   "name": "World Health Organization"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Hauptinhalt springen</a>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="../../../index.html" aria-label="BabySteps Startseite" lang="en" dir="ltr"><span class="brand-mark"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/><circle cx="24" cy="26" r="3" fill="#7C4DBA"/><circle cx="36" cy="26" r="3" fill="#7C4DBA"/><path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/></svg></span><span>Baby<span>Steps</span></span></a>
+<nav class="langs" aria-label="Sprache">
+<ul>
+<li><a href="../../../tools/growth-percentile/" hreflang="en" lang="en">English</a></li>
+<li><a href="../../../ar/tools/growth-percentile/" hreflang="ar" lang="ar">العربية</a></li>
+<li><a href="../../../es/tools/growth-percentile/" hreflang="es" lang="es">Español</a></li>
+<li><a href="../../../fr/tools/growth-percentile/" hreflang="fr" lang="fr">Français</a></li>
+<li><a href="../../../de/tools/growth-percentile/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<h1>Perzentilenrechner für das Babywachstum</h1>
+<p class="lede">Sieh ungefähr, wo Gewicht, Länge und Kopfumfang deines Babys auf den WHO-Wachstumsstandards liegen, von der Geburt bis 24 Monate.</p>
+<form id="growth-form" class="card" data-json="../../../data/who-growth.json" novalidate>
+<fieldset>
+<legend>Geschlecht <span class="hint">Die WHO veröffentlicht getrennte Kurven für Jungen und Mädchen.</span></legend>
+<div class="segmented">
+<label><input type="radio" name="sex" value="male"><span>Junge</span></label>
+<label><input type="radio" name="sex" value="female"><span>Mädchen</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Alter</legend>
+<div class="segmented">
+<label><input type="radio" name="agemode" value="dob" checked><span>Geburtsdatum</span></label>
+<label><input type="radio" name="agemode" value="age"><span>Alter in Monaten und Tagen</span></label>
+</div>
+<div id="age-dates" class="row two">
+<div class="field">
+<label for="dob">Geburtsdatum</label>
+<div class="input-wrap"><input type="date" id="dob" name="dob"></div>
+</div>
+<div class="field">
+<label for="measured">Messdatum</label>
+<div class="input-wrap"><input type="date" id="measured" name="measured"></div>
+</div>
+</div>
+<div id="age-numbers" class="row two" hidden>
+<div class="field">
+<label for="age-months">Monate</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-months" name="age-months"></div>
+</div>
+<div class="field">
+<label for="age-days">Tage</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-days" name="age-days"></div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>Einheiten</legend>
+<div class="segmented">
+<label><input type="radio" name="units" value="metric" checked><span>Metrisch (kg, cm)</span></label>
+<label><input type="radio" name="units" value="imperial"><span>Imperial (lb, oz, in)</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Messwerte <span class="hint">Fülle einen, mehrere oder alle aus.</span></legend>
+<div class="field">
+<label for="m-weight">Gewicht</label>
+
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-weight" name="m-weight"><span class="unit" data-metric="kg" data-imperial="lb">kg</span></div>
+<div class="input-wrap imperial-only" hidden><label class="visually-hidden" for="m-weight-oz">Unzen</label><input type="text" inputmode="decimal" autocomplete="off" id="m-weight-oz" name="m-weight-oz"><span class="unit" aria-hidden="true">oz</span></div></div>
+</div>
+<div class="field">
+<label for="m-length">Länge</label>
+<span class="hint" id="length-hint">Im Liegen gemessen.</span>
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-length" name="m-length" aria-describedby="length-hint"><span class="unit" data-metric="cm" data-imperial="in">cm</span></div>
+</div>
+</div>
+<div class="field">
+<label for="m-head">Kopfumfang</label>
+
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-head" name="m-head"><span class="unit" data-metric="cm" data-imperial="in">cm</span></div>
+</div>
+</div>
+</fieldset>
+<button type="submit" class="button">Perzentilen anzeigen</button>
+</form>
+<noscript><p class="errors" style="margin-top:16px">Dieses Tool braucht JavaScript, um Ergebnisse anzuzeigen.</p></noscript>
+<div id="errors" class="errors" tabindex="-1" hidden style="margin-top:16px"></div>
+<section id="results" aria-labelledby="results-heading" hidden>
+<h2 id="results-heading" tabindex="-1">Ergebnisse</h2>
+<p id="result-age" class="muted" style="margin-bottom:16px"></p>
+<div id="result-list" class="results"></div>
+</section>
+<section>
+<h2>So wird gerechnet</h2>
+<p>Die WHO-Wachstumsstandards enthalten Referenzkurven für das 3., 15., 50., 85. und 97. Perzentil für jeden Monat von der Geburt bis 24 Monate. Der Rechner bestimmt diese Kurven für das genaue Alter deines Babys und schätzt dann, wo der Messwert zwischen ihnen liegt.</p>
+<p>Da er mit fünf Kurven statt mit den vollständigen WHO-Tabellen arbeitet, ist das Ergebnis eine Schätzung. Es wird mit „etwa“ angezeigt, auf ein ganzes Perzentil gerundet und außerhalb des Bereichs vom 3. bis 97. Perzentil nicht angegeben.</p>
+</section>
+<section>
+<h2>Was ein Perzentil bedeutet</h2>
+<p>Ein Perzentil vergleicht einen Messwert mit einer großen Gruppe gesunder Babys gleichen Alters und Geschlechts. Etwa das 30. Perzentil heißt: Ungefähr 30 von 100 Babys hatten einen niedrigeren Wert, ungefähr 70 einen höheren. Es ist ein Vergleich, keine Note – Babys jeder Größe wachsen gut.</p>
+<p>Ein einzelner Messwert sagt weniger als der Verlauf über mehrere Termine. Deine Kinderärztin oder dein Kinderarzt schaut auf diesen Verlauf, darauf, wie dein Baby trinkt und isst, und wie es ihm insgesamt geht.</p>
+</section>
+<p class="muted" style="margin-top:24px">Quelle: <a href="https://www.who.int/tools/child-growth-standards" rel="noopener">Weltgesundheitsorganisation, WHO Child Growth Standards (Gewicht, Länge und Kopfumfang für das Alter), 2006.</a></p>
+<aside class="note" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">Allgemeine Information, keine medizinische Beratung</h2>
+<p>Diese Seite bietet allgemeine Informationen und ersetzt keine medizinische Beratung. Wenn du Fragen zum Wachstum, zum Trinken und Essen oder zum Schlaf deines Babys hast, sprich mit deiner Kinderarztpraxis, deiner Hebamme oder einer anderen medizinischen Fachkraft.</p>
+<p>Alles wird in deinem Browser berechnet. Keine Anmeldung, keine Cookies, kein Tracking: Nichts, was du eingibst, verlässt diese Seite.</p>
+</aside>
+<p class="muted" style="margin-top:24px">Ein weiteres kostenloses Tool: <a href="../../../de/tools/wake-windows/">Wachfenster nach Alter</a></p>
+<aside class="cta" aria-labelledby="cta-title">
+<h2 id="cta-title">Wachstum im Blick behalten</h2>
+<p>BabySteps sammelt Messwerte, Mahlzeiten, Schlaf und Windeln deines Babys an einem Ort, mit Wachstumskurven auf Basis derselben WHO-Daten.</p>
+<a class="button" href="https://apps.apple.com/app/id6761369475?ct=webtools-growth&amp;mt=8">BabySteps im App Store laden</a>
+</aside>
+</main>
+<footer class="site-footer">
+<nav aria-label="BabySteps">
+<a href="../../../index.html">Startseite</a>
+<a href="../../../privacy-policy.html" hreflang="en">Datenschutz</a>
+<a href="../../../terms-of-service.html" hreflang="en">Nutzungsbedingungen</a>
+<a href="../../../support.html" hreflang="en">Support</a>
+</nav>
+<p lang="en" dir="ltr">&copy; 2026 BabySteps: Log &amp; Track</p>
+</footer>
+</div>
+<script type="application/json" id="tool-strings">
+{
+ "pAbout": "Etwa im {p} Perzentil",
+ "explain": "Auf der WHO-Kurve haben etwa {n} von 100 Babys gleichen Alters und Geschlechts einen niedrigeren Wert.",
+ "below": "Unter der Linie des {p} Perzentils, die in diesem Alter bei {v} liegt.",
+ "above": "Über der Linie des {p} Perzentils, die in diesem Alter bei {v} liegt.",
+ "outsideNote": "Über diese Linien hinaus schätzt der Rechner nicht. Eine medizinische Fachkraft kann den Messwert einordnen.",
+ "range": "Typischer Bereich in diesem Alter (3. bis 97. Perzentil): {lo} bis {hi}. Mitte (50. Perzentil): {mid}.",
+ "age": "Alter bei der Messung: {age}",
+ "errSex": "Wähle Junge oder Mädchen.",
+ "errDob": "Gib das Geburtsdatum und das Messdatum ein.",
+ "errOrder": "Das Messdatum liegt vor dem Geburtsdatum.",
+ "errAge": "Gib das Alter in ganzen Monaten und Tagen ein.",
+ "errNone": "Gib mindestens einen Messwert ein.",
+ "errNumber": "{field}: Gib eine Zahl ein, zum Beispiel {example}.",
+ "errPlausible": "{field}: {v} liegt anscheinend außerhalb dessen, was die WHO-Kurve abdeckt. Prüfe Zahl und Einheit.",
+ "outOfRange": "Der Rechner deckt die Zeit von der Geburt bis 24 Monate ab. Das eingegebene Alter ({age}) liegt außerhalb davon.",
+ "locale": "de",
+ "ordinal": "dot",
+ "loadError": "Die Daten für dieses Tool konnten nicht geladen werden. Bitte lade die Seite neu.",
+ "units": {
+  "kilogram": "kg",
+  "pound": "lb",
+  "ounce": "oz",
+  "centimeter": "cm",
+  "inch": "in"
+ },
+ "labels": {
+  "weight": "Gewicht",
+  "length": "Länge",
+  "head": "Kopfumfang"
+ }
+}
+</script>
+<script src="../../../assets/growth.js" defer></script>
+</body>
+</html>

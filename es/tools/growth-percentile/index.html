@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de percentiles de crecimiento del bebé (OMS, 0–24 meses) | BabySteps</title>
+<meta name="description" content="Calculadora gratuita de percentiles de peso, longitud y perímetro cefálico según los Patrones de Crecimiento Infantil de la OMS, desde el nacimiento hasta los 24 meses. Privada: funciona en tu navegador.">
+<link rel="canonical" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/growth-percentile/">
+<link rel="alternate" hreflang="en" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/growth-percentile/">
+<link rel="alternate" hreflang="ar" href="https://soloqdev.github.io/BabySteps-Log-Track/ar/tools/growth-percentile/">
+<link rel="alternate" hreflang="es" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/growth-percentile/">
+<link rel="alternate" hreflang="fr" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/growth-percentile/">
+<link rel="alternate" hreflang="de" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/growth-percentile/">
+<link rel="alternate" hreflang="x-default" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/growth-percentile/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de percentiles de crecimiento del bebé (OMS, 0–24 meses) | BabySteps">
+<meta property="og:description" content="Calculadora gratuita de percentiles de peso, longitud y perímetro cefálico según los Patrones de Crecimiento Infantil de la OMS, desde el nacimiento hasta los 24 meses. Privada: funciona en tu navegador.">
+<meta property="og:url" content="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/growth-percentile/">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#F9F5FF">
+<link rel="stylesheet" href="../../../assets/tools.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Calculadora de percentiles de crecimiento del bebé",
+ "description": "Calculadora gratuita de percentiles de peso, longitud y perímetro cefálico según los Patrones de Crecimiento Infantil de la OMS, desde el nacimiento hasta los 24 meses. Privada: funciona en tu navegador.",
+ "url": "https://soloqdev.github.io/BabySteps-Log-Track/es/tools/growth-percentile/",
+ "inLanguage": "es",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BabySteps: Log & Track",
+  "url": "https://soloqdev.github.io/BabySteps-Log-Track/"
+ },
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "WHO Child Growth Standards",
+  "url": "https://www.who.int/tools/child-growth-standards",
+  "publisher": {
+   "@type": "Organization",
+   "name": "World Health Organization"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="../../../index.html" aria-label="Inicio de BabySteps" lang="en" dir="ltr"><span class="brand-mark"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/><circle cx="24" cy="26" r="3" fill="#7C4DBA"/><circle cx="36" cy="26" r="3" fill="#7C4DBA"/><path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/></svg></span><span>Baby<span>Steps</span></span></a>
+<nav class="langs" aria-label="Idioma">
+<ul>
+<li><a href="../../../tools/growth-percentile/" hreflang="en" lang="en">English</a></li>
+<li><a href="../../../ar/tools/growth-percentile/" hreflang="ar" lang="ar">العربية</a></li>
+<li><a href="../../../es/tools/growth-percentile/" hreflang="es" lang="es" aria-current="page">Español</a></li>
+<li><a href="../../../fr/tools/growth-percentile/" hreflang="fr" lang="fr">Français</a></li>
+<li><a href="../../../de/tools/growth-percentile/" hreflang="de" lang="de">Deutsch</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<h1>Calculadora de percentiles de crecimiento del bebé</h1>
+<p class="lede">Descubre aproximadamente dónde se sitúan el peso, la longitud y el perímetro cefálico de tu bebé en los Patrones de Crecimiento Infantil de la OMS, desde el nacimiento hasta los 24 meses.</p>
+<form id="growth-form" class="card" data-json="../../../data/who-growth.json" novalidate>
+<fieldset>
+<legend>Sexo <span class="hint">La OMS publica tablas distintas para niños y niñas.</span></legend>
+<div class="segmented">
+<label><input type="radio" name="sex" value="male"><span>Niño</span></label>
+<label><input type="radio" name="sex" value="female"><span>Niña</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Edad</legend>
+<div class="segmented">
+<label><input type="radio" name="agemode" value="dob" checked><span>Fecha de nacimiento</span></label>
+<label><input type="radio" name="agemode" value="age"><span>Edad en meses y días</span></label>
+</div>
+<div id="age-dates" class="row two">
+<div class="field">
+<label for="dob">Fecha de nacimiento</label>
+<div class="input-wrap"><input type="date" id="dob" name="dob"></div>
+</div>
+<div class="field">
+<label for="measured">Fecha de la medición</label>
+<div class="input-wrap"><input type="date" id="measured" name="measured"></div>
+</div>
+</div>
+<div id="age-numbers" class="row two" hidden>
+<div class="field">
+<label for="age-months">Meses</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-months" name="age-months"></div>
+</div>
+<div class="field">
+<label for="age-days">Días</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-days" name="age-days"></div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>Unidades</legend>
+<div class="segmented">
+<label><input type="radio" name="units" value="metric" checked><span>Métrico (kg, cm)</span></label>
+<label><input type="radio" name="units" value="imperial"><span>Imperial (lb, oz, in)</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Medidas <span class="hint">Rellena una, varias o todas.</span></legend>
+<div class="field">
+<label for="m-weight">Peso</label>
+
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-weight" name="m-weight"><span class="unit" data-metric="kg" data-imperial="lb">kg</span></div>
+<div class="input-wrap imperial-only" hidden><label class="visually-hidden" for="m-weight-oz">Onzas</label><input type="text" inputmode="decimal" autocomplete="off" id="m-weight-oz" name="m-weight-oz"><span class="unit" aria-hidden="true">oz</span></div></div>
+</div>
+<div class="field">
+<label for="m-length">Longitud</label>
+<span class="hint" id="length-hint">Medida con el bebé acostado.</span>
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-length" name="m-length" aria-describedby="length-hint"><span class="unit" data-metric="cm" data-imperial="in">cm</span></div>
+</div>
+</div>
+<div class="field">
+<label for="m-head">Perímetro cefálico</label>
+
+<div class="pair">
+<div class="input-wrap"><input type="text" inputmode="decimal" autocomplete="off" id="m-head" name="m-head"><span class="unit" data-metric="cm" data-imperial="in">cm</span></div>
+</div>
+</div>
+</fieldset>
+<button type="submit" class="button">Ver percentiles</button>
+</form>
+<noscript><p class="errors" style="margin-top:16px">Esta herramienta necesita JavaScript para mostrar los resultados.</p></noscript>
+<div id="errors" class="errors" tabindex="-1" hidden style="margin-top:16px"></div>
+<section id="results" aria-labelledby="results-heading" hidden>
+<h2 id="results-heading" tabindex="-1">Resultados</h2>
+<p id="result-age" class="muted" style="margin-bottom:16px"></p>
+<div id="result-list" class="results"></div>
+</section>
+<section>
+<h2>Cómo se calcula</h2>
+<p>Los Patrones de Crecimiento Infantil de la OMS ofrecen curvas de referencia para los percentiles 3, 15, 50, 85 y 97 en cada mes, desde el nacimiento hasta los 24 meses. Esta calculadora sitúa esas curvas en la edad exacta de tu bebé y estima dónde cae la medida entre ellas.</p>
+<p>Como parte de cinco curvas y no de las tablas completas de la OMS, el resultado es una estimación. Se muestra como «alrededor de», se redondea a un percentil entero y no se calcula fuera del rango entre los percentiles 3 y 97.</p>
+</section>
+<section>
+<h2>Qué significa un percentil</h2>
+<p>Un percentil compara una medida con un gran grupo de bebés sanos de la misma edad y sexo. Estar alrededor del percentil 30 significa que unos 30 de cada 100 bebés tenían una medida menor y unos 70 una mayor. Es una comparación, no una nota: bebés de todos los tamaños crecen bien.</p>
+<p>Una sola medida dice menos que la evolución a lo largo de varias visitas. Tu profesional de la salud tiene en cuenta esa evolución, cómo se alimenta tu bebé y cómo está en general.</p>
+</section>
+<p class="muted" style="margin-top:24px">Fuente: <a href="https://www.who.int/tools/child-growth-standards" rel="noopener">Organización Mundial de la Salud, Patrones de Crecimiento Infantil de la OMS (peso para la edad, longitud para la edad y perímetro cefálico para la edad), 2006.</a></p>
+<aside class="note" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">Información general, no consejo médico</h2>
+<p>Esta página ofrece información general y no sustituye el consejo médico. Si tienes preguntas o dudas sobre el crecimiento, la alimentación o el sueño de tu bebé, habla con tu pediatra, tu enfermera u otro profesional de la salud.</p>
+<p>Todo se calcula en tu navegador. Sin registro, sin cookies, sin seguimiento: nada de lo que introduces sale de esta página.</p>
+</aside>
+<p class="muted" style="margin-top:24px">Otra herramienta gratuita: <a href="../../../es/tools/wake-windows/">Ventanas de vigilia por edad</a></p>
+<aside class="cta" aria-labelledby="cta-title">
+<h2 id="cta-title">Guarda un registro del crecimiento</h2>
+<p>BabySteps reúne las medidas, tomas, sueño y pañales de tu bebé en un solo lugar, con gráficas de crecimiento basadas en los mismos datos de la OMS.</p>
+<a class="button" href="https://apps.apple.com/app/id6761369475?ct=webtools-growth&amp;mt=8">Descarga BabySteps en el App Store</a>
+</aside>
+</main>
+<footer class="site-footer">
+<nav aria-label="BabySteps">
+<a href="../../../index.html">Inicio</a>
+<a href="../../../privacy-policy.html" hreflang="en">Política de privacidad</a>
+<a href="../../../terms-of-service.html" hreflang="en">Términos del servicio</a>
+<a href="../../../support.html" hreflang="en">Soporte</a>
+</nav>
+<p lang="en" dir="ltr">&copy; 2026 BabySteps: Log &amp; Track</p>
+</footer>
+</div>
+<script type="application/json" id="tool-strings">
+{
+ "pAbout": "Alrededor del percentil {p}",
+ "explain": "En la tabla de la OMS, unos {n} de cada 100 bebés de la misma edad y sexo tienen una medida menor.",
+ "below": "Por debajo de la línea del percentil {p}, que a esta edad es {v}.",
+ "above": "Por encima de la línea del percentil {p}, que a esta edad es {v}.",
+ "outsideNote": "Esta calculadora no hace estimaciones más allá de estas líneas. Un profesional de la salud puede valorar la medida en su contexto.",
+ "range": "Rango habitual a esta edad (percentiles 3 a 97): de {lo} a {hi}. Valor central (percentil 50): {mid}.",
+ "age": "Edad en la medición: {age}",
+ "errSex": "Elige niño o niña.",
+ "errDob": "Introduce la fecha de nacimiento y la fecha de la medición.",
+ "errOrder": "La fecha de la medición es anterior a la fecha de nacimiento.",
+ "errAge": "Introduce la edad en meses y días enteros.",
+ "errNone": "Introduce al menos una medida.",
+ "errNumber": "{field}: introduce un número, por ejemplo {example}.",
+ "errPlausible": "{field}: {v} parece estar fuera de lo que cubre la tabla de la OMS. Revisa el número y la unidad.",
+ "outOfRange": "Esta calculadora abarca desde el nacimiento hasta los 24 meses. La edad introducida ({age}) está fuera de ese rango.",
+ "locale": "es",
+ "ordinal": "plain",
+ "loadError": "No se pudieron cargar los datos de esta herramienta. Vuelve a cargar la página.",
+ "units": {
+  "kilogram": "kg",
+  "pound": "lb",
+  "ounce": "oz",
+  "centimeter": "cm",
+  "inch": "in"
+ },
+ "labels": {
+  "weight": "Peso",
+  "length": "Longitud",
+  "head": "Perímetro cefálico"
+ }
+}
+</script>
+<script src="../../../assets/growth.js" defer></script>
+</body>
+</html>
