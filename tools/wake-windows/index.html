@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Wake Windows by Age (0–12 months) | BabySteps</title>
+<meta name="description" content="Typical wake-window ranges for babies from newborn to 12 months, with a quick lookup for your baby&#x27;s age. Free and private, no sign-up.">
+<link rel="canonical" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<link rel="alternate" hreflang="en" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<link rel="alternate" hreflang="ar" href="https://soloqdev.github.io/BabySteps-Log-Track/ar/tools/wake-windows/">
+<link rel="alternate" hreflang="es" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/wake-windows/">
+<link rel="alternate" hreflang="fr" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/wake-windows/">
+<link rel="alternate" hreflang="de" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/wake-windows/">
+<link rel="alternate" hreflang="x-default" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Baby Wake Windows by Age (0–12 months) | BabySteps">
+<meta property="og:description" content="Typical wake-window ranges for babies from newborn to 12 months, with a quick lookup for your baby&#x27;s age. Free and private, no sign-up.">
+<meta property="og:url" content="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<meta property="og:locale" content="en_US">
+<meta name="theme-color" content="#F9F5FF">
+<link rel="stylesheet" href="../../assets/tools.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Wake windows by age",
+ "description": "Typical wake-window ranges for babies from newborn to 12 months, with a quick lookup for your baby's age. Free and private, no sign-up.",
+ "url": "https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/",
+ "inLanguage": "en",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BabySteps: Log & Track",
+  "url": "https://soloqdev.github.io/BabySteps-Log-Track/"
+ },
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "Wake windows by age",
+  "url": "https://health.clevelandclinic.org/wake-windows-by-age",
+  "publisher": {
+   "@type": "Organization",
+   "name": "Cleveland Clinic"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="../../index.html" aria-label="BabySteps home" lang="en" dir="ltr"><span class="brand-mark"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/><circle cx="24" cy="26" r="3" fill="#7C4DBA"/><circle cx="36" cy="26" r="3" fill="#7C4DBA"/><path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/></svg></span><span>Baby<span>Steps</span></span></a>
+<nav class="langs" aria-label="Language">
+<ul>
+<li><a href="../../tools/wake-windows/" hreflang="en" lang="en" aria-current="page">English</a></li>
+<li><a href="../../ar/tools/wake-windows/" hreflang="ar" lang="ar">العربية</a></li>
+<li><a href="../../es/tools/wake-windows/" hreflang="es" lang="es">Español</a></li>
+<li><a href="../../fr/tools/wake-windows/" hreflang="fr" lang="fr">Français</a></li>
+<li><a href="../../de/tools/wake-windows/" hreflang="de" lang="de">Deutsch</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<h1>Wake windows by age</h1>
+<p class="lede">A wake window is the stretch of time your baby is awake between sleeps. Enter your baby&#x27;s age to see the typical range, or browse the chart below.</p>
+<form id="wake-form" class="card" data-json="../../data/wake-windows.json" novalidate>
+<fieldset>
+<legend>Age</legend>
+<div class="segmented">
+<label><input type="radio" name="agemode" value="dob" checked><span>Date of birth</span></label>
+<label><input type="radio" name="agemode" value="age"><span>Age in months and days</span></label>
+</div>
+<div id="age-dates" class="row">
+<div class="field">
+<label for="dob">Date of birth</label>
+<div class="input-wrap"><input type="date" id="dob" name="dob"></div>
+</div>
+</div>
+<div id="age-numbers" class="row two" hidden>
+<div class="field">
+<label for="age-months">Months</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-months" name="age-months"></div>
+</div>
+<div class="field">
+<label for="age-days">Days</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-days" name="age-days"></div>
+</div>
+</div>
+</fieldset>
+<button type="submit" class="button">Show typical range</button>
+</form>
+<noscript><p class="errors" style="margin-top:16px">This tool needs JavaScript to show results.</p></noscript>
+<div id="errors" class="errors" tabindex="-1" hidden style="margin-top:16px"></div>
+<div id="result" class="result" hidden style="margin-top:16px">
+<p id="result-main" class="headline" tabindex="-1"></p>
+<p id="result-note" class="muted"></p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Typical wake windows from birth to 12 months</caption>
+<thead><tr><th scope="col">Age</th><th scope="col">Typical wake window</th></tr></thead>
+<tbody id="wake-rows"><tr><td colspan="2">Loading…</td></tr></tbody>
+</table>
+</div>
+<section>
+<h2>About these ranges</h2>
+<p>The ranges come from Cleveland Clinic&#x27;s guide to wake windows by age, and they are the same ranges used in the BabySteps app. They are typical ranges, not targets.</p>
+<p>Signs such as rubbing eyes, yawning, looking away or getting fussy often show tiredness before the clock does. If you have questions about your baby&#x27;s sleep, a health professional can help.</p>
+</section>
+<p class="muted" style="margin-top:24px">Source: <a href="https://health.clevelandclinic.org/wake-windows-by-age" rel="noopener">Cleveland Clinic, “Wake windows by age”.</a></p>
+<aside class="note" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">General information, not medical advice</h2>
+<p>This page gives general information and is not medical advice. If you have any questions or concerns about your baby&#x27;s growth, feeding or sleep, talk to your doctor, nurse or another health professional.</p>
+<p>Everything is worked out in your browser. No sign-up, no cookies, no tracking, and nothing you enter leaves this page.</p>
+</aside>
+<p class="muted" style="margin-top:24px">Another free tool: <a href="../../tools/growth-percentile/">Growth percentile calculator</a></p>
+<aside class="cta" aria-labelledby="cta-title">
+<h2 id="cta-title">See your baby&#x27;s own rhythm</h2>
+<p>BabySteps logs sleep, feeds and diapers in a few seconds, so your baby&#x27;s own pattern becomes clear over time.</p>
+<a class="button" href="https://apps.apple.com/app/id6761369475?ct=webtools-wake&amp;mt=8">Download BabySteps on the App Store</a>
+</aside>
+</main>
+<footer class="site-footer">
+<nav aria-label="BabySteps">
+<a href="../../index.html">Home</a>
+<a href="../../privacy-policy.html" hreflang="en">Privacy Policy</a>
+<a href="../../terms-of-service.html" hreflang="en">Terms of Service</a>
+<a href="../../support.html" hreflang="en">Support</a>
+</nav>
+<p lang="en" dir="ltr">&copy; 2026 BabySteps: Log &amp; Track</p>
+</footer>
+</div>
+<script type="application/json" id="tool-strings">
+{
+ "result": "At {age}, a typical wake window is {range}.",
+ "resultNote": "Many babies sit at one end of this range, and some days look different. Your baby's sleepy cues are often a better guide than the clock.",
+ "toddler": "This chart covers the first 12 months. After that, awake time varies more from child to child, so your child's own rhythm is the best guide.",
+ "errDob": "Enter the date of birth.",
+ "errFuture": "The date of birth is in the future.",
+ "errAge": "Enter the age in whole months and days.",
+ "youHere": "Your baby's age",
+ "range": "{a} to {b}",
+ "bandLabel": "{a}–{b} {unit}",
+ "monthForms": {
+  "one": "month",
+  "other": "months"
+ },
+ "locale": "en",
+ "loadError": "The data for this tool could not be loaded. Please reload the page."
+}
+</script>
+<script src="../../assets/wake.js" defer></script>
+</body>
+</html>

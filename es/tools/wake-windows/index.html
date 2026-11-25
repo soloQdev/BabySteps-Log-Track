@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventanas de vigilia del bebé por edad (0–12 meses) | BabySteps</title>
+<meta name="description" content="Rangos habituales de ventanas de vigilia para bebés desde recién nacidos hasta los 12 meses, con una consulta rápida según la edad de tu bebé. Gratis y privado, sin registro.">
+<link rel="canonical" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/wake-windows/">
+<link rel="alternate" hreflang="en" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<link rel="alternate" hreflang="ar" href="https://soloqdev.github.io/BabySteps-Log-Track/ar/tools/wake-windows/">
+<link rel="alternate" hreflang="es" href="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/wake-windows/">
+<link rel="alternate" hreflang="fr" href="https://soloqdev.github.io/BabySteps-Log-Track/fr/tools/wake-windows/">
+<link rel="alternate" hreflang="de" href="https://soloqdev.github.io/BabySteps-Log-Track/de/tools/wake-windows/">
+<link rel="alternate" hreflang="x-default" href="https://soloqdev.github.io/BabySteps-Log-Track/tools/wake-windows/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ventanas de vigilia del bebé por edad (0–12 meses) | BabySteps">
+<meta property="og:description" content="Rangos habituales de ventanas de vigilia para bebés desde recién nacidos hasta los 12 meses, con una consulta rápida según la edad de tu bebé. Gratis y privado, sin registro.">
+<meta property="og:url" content="https://soloqdev.github.io/BabySteps-Log-Track/es/tools/wake-windows/">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#F9F5FF">
+<link rel="stylesheet" href="../../../assets/tools.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "Ventanas de vigilia por edad",
+ "description": "Rangos habituales de ventanas de vigilia para bebés desde recién nacidos hasta los 12 meses, con una consulta rápida según la edad de tu bebé. Gratis y privado, sin registro.",
+ "url": "https://soloqdev.github.io/BabySteps-Log-Track/es/tools/wake-windows/",
+ "inLanguage": "es",
+ "applicationCategory": "HealthApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BabySteps: Log & Track",
+  "url": "https://soloqdev.github.io/BabySteps-Log-Track/"
+ },
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "Wake windows by age",
+  "url": "https://health.clevelandclinic.org/wake-windows-by-age",
+  "publisher": {
+   "@type": "Organization",
+   "name": "Cleveland Clinic"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="../../../index.html" aria-label="Inicio de BabySteps" lang="en" dir="ltr"><span class="brand-mark"><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/><circle cx="24" cy="26" r="3" fill="#7C4DBA"/><circle cx="36" cy="26" r="3" fill="#7C4DBA"/><path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/></svg></span><span>Baby<span>Steps</span></span></a>
+<nav class="langs" aria-label="Idioma">
+<ul>
+<li><a href="../../../tools/wake-windows/" hreflang="en" lang="en">English</a></li>
+<li><a href="../../../ar/tools/wake-windows/" hreflang="ar" lang="ar">العربية</a></li>
+<li><a href="../../../es/tools/wake-windows/" hreflang="es" lang="es" aria-current="page">Español</a></li>
+<li><a href="../../../fr/tools/wake-windows/" hreflang="fr" lang="fr">Français</a></li>
+<li><a href="../../../de/tools/wake-windows/" hreflang="de" lang="de">Deutsch</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<h1>Ventanas de vigilia por edad</h1>
+<p class="lede">Una ventana de vigilia es el tiempo que tu bebé pasa despierto entre un sueño y el siguiente. Introduce la edad de tu bebé para ver el rango habitual o consulta la tabla.</p>
+<form id="wake-form" class="card" data-json="../../../data/wake-windows.json" novalidate>
+<fieldset>
+<legend>Edad</legend>
+<div class="segmented">
+<label><input type="radio" name="agemode" value="dob" checked><span>Fecha de nacimiento</span></label>
+<label><input type="radio" name="agemode" value="age"><span>Edad en meses y días</span></label>
+</div>
+<div id="age-dates" class="row">
+<div class="field">
+<label for="dob">Fecha de nacimiento</label>
+<div class="input-wrap"><input type="date" id="dob" name="dob"></div>
+</div>
+</div>
+<div id="age-numbers" class="row two" hidden>
+<div class="field">
+<label for="age-months">Meses</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-months" name="age-months"></div>
+</div>
+<div class="field">
+<label for="age-days">Días</label>
+<div class="input-wrap"><input type="text" inputmode="numeric" autocomplete="off" id="age-days" name="age-days"></div>
+</div>
+</div>
+</fieldset>
+<button type="submit" class="button">Ver rango habitual</button>
+</form>
+<noscript><p class="errors" style="margin-top:16px">Esta herramienta necesita JavaScript para mostrar los resultados.</p></noscript>
+<div id="errors" class="errors" tabindex="-1" hidden style="margin-top:16px"></div>
+<div id="result" class="result" hidden style="margin-top:16px">
+<p id="result-main" class="headline" tabindex="-1"></p>
+<p id="result-note" class="muted"></p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Ventanas de vigilia habituales desde el nacimiento hasta los 12 meses</caption>
+<thead><tr><th scope="col">Edad</th><th scope="col">Ventana de vigilia habitual</th></tr></thead>
+<tbody id="wake-rows"><tr><td colspan="2">Cargando…</td></tr></tbody>
+</table>
+</div>
+<section>
+<h2>Sobre estos rangos</h2>
+<p>Los rangos proceden de la guía de Cleveland Clinic sobre ventanas de vigilia por edad y son los mismos que usa la app BabySteps. Son rangos habituales, no objetivos.</p>
+<p>Señales como frotarse los ojos, bostezar, apartar la mirada o estar más inquieto suelen mostrar el cansancio antes que el reloj. Si tienes dudas sobre el sueño de tu bebé, un profesional de la salud puede ayudarte.</p>
+</section>
+<p class="muted" style="margin-top:24px">Fuente: <a href="https://health.clevelandclinic.org/wake-windows-by-age" rel="noopener">Cleveland Clinic, «Wake windows by age» (en inglés).</a></p>
+<aside class="note" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">Información general, no consejo médico</h2>
+<p>Esta página ofrece información general y no sustituye el consejo médico. Si tienes preguntas o dudas sobre el crecimiento, la alimentación o el sueño de tu bebé, habla con tu pediatra, tu enfermera u otro profesional de la salud.</p>
+<p>Todo se calcula en tu navegador. Sin registro, sin cookies, sin seguimiento: nada de lo que introduces sale de esta página.</p>
+</aside>
+<p class="muted" style="margin-top:24px">Otra herramienta gratuita: <a href="../../../es/tools/growth-percentile/">Calculadora de percentiles de crecimiento</a></p>
+<aside class="cta" aria-labelledby="cta-title">
+<h2 id="cta-title">Descubre el ritmo de tu bebé</h2>
+<p>BabySteps registra sueño, tomas y pañales en segundos, para que el patrón propio de tu bebé se vea con el tiempo.</p>
+<a class="button" href="https://apps.apple.com/app/id6761369475?ct=webtools-wake&amp;mt=8">Descarga BabySteps en el App Store</a>
+</aside>
+</main>
+<footer class="site-footer">
+<nav aria-label="BabySteps">
+<a href="../../../index.html">Inicio</a>
+<a href="../../../privacy-policy.html" hreflang="en">Política de privacidad</a>
+<a href="../../../terms-of-service.html" hreflang="en">Términos del servicio</a>
+<a href="../../../support.html" hreflang="en">Soporte</a>
+</nav>
+<p lang="en" dir="ltr">&copy; 2026 BabySteps: Log &amp; Track</p>
+</footer>
+</div>
+<script type="application/json" id="tool-strings">
+{
+ "result": "Con {age}, una ventana de vigilia habitual dura {range}.",
+ "resultNote": "Muchos bebés se quedan en un extremo del rango, y algunos días son distintos. Las señales de sueño de tu bebé suelen orientar mejor que el reloj.",
+ "toddler": "Esta tabla abarca los primeros 12 meses. A partir de ahí, el tiempo despierto varía más de un niño a otro, así que el ritmo propio de tu hijo es la mejor guía.",
+ "errDob": "Introduce la fecha de nacimiento.",
+ "errFuture": "La fecha de nacimiento es posterior a hoy.",
+ "errAge": "Introduce la edad en meses y días enteros.",
+ "youHere": "Edad de tu bebé",
+ "range": "de {a} a {b}",
+ "bandLabel": "{a}–{b} {unit}",
+ "monthForms": {
+  "one": "mes",
+  "many": "meses",
+  "other": "meses"
+ },
+ "locale": "es",
+ "loadError": "No se pudieron cargar los datos de esta herramienta. Vuelve a cargar la página."
+}
+</script>
+<script src="../../../assets/wake.js" defer></script>
+</body>
+</html>
